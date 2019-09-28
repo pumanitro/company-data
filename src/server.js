@@ -2,7 +2,7 @@ import CONSTS from './consts';
 import express from 'express';
 
 const app = express();
-const port = 80;
+const port = process.env.PORT || 80;
 
 app.get('/', (req, res) => res.send('We keep here all our up to date company data'));
 
